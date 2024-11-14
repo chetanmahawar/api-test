@@ -1,18 +1,18 @@
 [
   {
     "info": {
-      "_postman_id": "91c7bfc3-0ea5-4119-bf92-f23a5cab13a4",
+      "_postman_id": "0ca07a4e-d0aa-4405-b853-2c3570a6ed9f",
       "name": "Addresses - Updated - Updated",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2024-11-14T23:19:56.000Z",
-      "createdAt": "2023-03-19T17:15:53.000Z",
-      "lastUpdatedBy": "19388008",
-      "uid": "19388008-91c7bfc3-0ea5-4119-bf92-f23a5cab13a4"
+      "updatedAt": "2024-11-14T23:34:24.000Z",
+      "createdAt": "2024-11-14T23:34:23.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-0ca07a4e-d0aa-4405-b853-2c3570a6ed9f"
     },
     "item": [
       {
         "name": "testing test",
-        "id": "5cfc66ac-96f0-48a0-bf84-e864aa4992d3",
+        "id": "345cb941-86df-4440-b837-48ee8e100d94",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
@@ -34,24 +34,63 @@
           }
         },
         "response": [],
-        "uid": "19388008-5cfc66ac-96f0-48a0-bf84-e864aa4992d3"
+        "uid": "39752485-345cb941-86df-4440-b837-48ee8e100d94"
       }
     ]
   },
   {
     "info": {
-      "_postman_id": "7e8cf0be-d97a-498c-9b44-16a282b89c9e",
+      "_postman_id": "dcca6921-a238-4a97-96a8-c3cbc2303e29",
+      "name": "Addresses - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:35:42.000Z",
+      "createdAt": "2024-11-14T23:35:42.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-dcca6921-a238-4a97-96a8-c3cbc2303e29"
+    },
+    "item": [
+      {
+        "name": "testing test",
+        "id": "4996c088-3e0b-4b53-8882-00589c65713f",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/api/dms/uploadtosharepoint",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "dms",
+              "uploadtosharepoint"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-4996c088-3e0b-4b53-8882-00589c65713f"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "077a8727-0cca-477b-92f5-75ace0fbee73",
       "name": "Authentication - Updated - Updated",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2024-11-14T23:19:57.000Z",
-      "createdAt": "2023-03-12T20:20:11.000Z",
-      "lastUpdatedBy": "19388008",
-      "uid": "19388008-7e8cf0be-d97a-498c-9b44-16a282b89c9e"
+      "updatedAt": "2024-11-14T23:35:43.000Z",
+      "createdAt": "2024-11-14T23:35:43.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-077a8727-0cca-477b-92f5-75ace0fbee73"
     },
     "item": [
       {
         "name": "Login",
-        "id": "5bb6d06a-912d-4e2e-b16d-b30d9f8b0269",
+        "id": "bfc7202a-c5b0-4a4b-843e-d4341416e351",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
@@ -79,11 +118,11 @@
           }
         },
         "response": [],
-        "uid": "19388008-5bb6d06a-912d-4e2e-b16d-b30d9f8b0269"
+        "uid": "39752485-bfc7202a-c5b0-4a4b-843e-d4341416e351"
       },
       {
         "name": "Register",
-        "id": "591431db-4edb-41c9-ba80-5063908ceaf0",
+        "id": "fd54e2af-4f28-423c-847f-4cc1e1465e02",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
@@ -111,24 +150,101 @@
           }
         },
         "response": [],
-        "uid": "19388008-591431db-4edb-41c9-ba80-5063908ceaf0"
+        "uid": "39752485-fd54e2af-4f28-423c-847f-4cc1e1465e02"
       }
     ]
   },
   {
     "info": {
-      "_postman_id": "89a81b04-2480-4cc3-a1bb-b5e31d96a997",
+      "_postman_id": "29f6d3e9-5326-4b3d-96f2-3c6b025e229d",
+      "name": "Authentication - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:34:25.000Z",
+      "createdAt": "2024-11-14T23:34:25.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-29f6d3e9-5326-4b3d-96f2-3c6b025e229d"
+    },
+    "item": [
+      {
+        "name": "Login",
+        "id": "a80fbc96-a821-4d19-9981-ee3141c236b3",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"emailId\" : \"profileofchetan123@gmail.com\",\n    \"password\" : \"1234\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/auth/login",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "auth",
+              "login"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-a80fbc96-a821-4d19-9981-ee3141c236b3"
+      },
+      {
+        "name": "Register",
+        "id": "ab9239b0-b44b-49da-a33c-52b1cbd7ae02",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n   \"emailId\" : \"profileofchetan@gmail.com\",\n   \"mobileNumber\" : \"9823892389\",\n   \"password\" : \"Mango8800@\"\n   \n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/auth/register",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "auth",
+              "register"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-ab9239b0-b44b-49da-a33c-52b1cbd7ae02"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "58b7c53a-4dda-4647-9ef0-ce4a27877c4a",
       "name": "Login - Updated - Updated",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2024-11-14T23:19:59.000Z",
-      "createdAt": "2023-03-09T14:43:26.000Z",
-      "lastUpdatedBy": "19388008",
-      "uid": "19388008-89a81b04-2480-4cc3-a1bb-b5e31d96a997"
+      "updatedAt": "2024-11-14T23:34:26.000Z",
+      "createdAt": "2024-11-14T23:34:26.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-58b7c53a-4dda-4647-9ef0-ce4a27877c4a"
     },
     "item": [
       {
         "name": "Login - User",
-        "id": "29a1486c-747f-4100-a347-63698d8db38a",
+        "id": "eac7c00e-7fd7-408f-9196-bea7f885fade",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
@@ -157,11 +273,11 @@
           }
         },
         "response": [],
-        "uid": "19388008-29a1486c-747f-4100-a347-63698d8db38a"
+        "uid": "39752485-eac7c00e-7fd7-408f-9196-bea7f885fade"
       },
       {
         "name": "CRUD",
-        "id": "c487fde4-1e0e-4c18-aee5-b4d7e19cfd66",
+        "id": "06436b98-8619-43af-a092-b03933ac8a6b",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
@@ -227,11 +343,11 @@
           }
         },
         "response": [],
-        "uid": "19388008-c487fde4-1e0e-4c18-aee5-b4d7e19cfd66"
+        "uid": "39752485-06436b98-8619-43af-a092-b03933ac8a6b"
       },
       {
         "name": "Query",
-        "id": "55c58ffd-d82b-4e52-9ca8-f0ca9d16faca",
+        "id": "9b1b4ec3-cf3a-471f-b326-99a0cb66bdc1",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
@@ -274,7 +390,205 @@
           }
         },
         "response": [],
-        "uid": "19388008-55c58ffd-d82b-4e52-9ca8-f0ca9d16faca"
+        "uid": "39752485-9b1b4ec3-cf3a-471f-b326-99a0cb66bdc1"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "e6818d59-7506-4897-b448-a98d1038a5f4",
+      "name": "Login - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:35:44.000Z",
+      "createdAt": "2024-11-14T23:35:43.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-e6818d59-7506-4897-b448-a98d1038a5f4"
+    },
+    "item": [
+      {
+        "name": "Login - User",
+        "id": "b6ced236-f3ce-439b-88be-2890f8ae6995",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"username\": \"suresh01\",\n    \"userpassword\": \"welcome1\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{bsseurl}}/users/login/23243",
+            "host": [
+              "{{bsseurl}}"
+            ],
+            "path": [
+              "users",
+              "login",
+              "23243"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-b6ced236-f3ce-439b-88be-2890f8ae6995"
+      },
+      {
+        "name": "CRUD",
+        "id": "c6737a01-f5b8-4943-a78c-68dc4e7c70de",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "bearer",
+            "bearer": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vd3d3LmZyb250cm9sLmNvbS8iLCJ1c2VyTmFtZSI6InN1cmVzaDAxIiwidXNlckxhbmd1YWdlIjoiVVMiLCJ0ZW5hbnRJZCI6MSwibmFtZUlERm9ybWF0IjoiIiwiZGVidWdNb2RlIjoiTiIsImxvZ0NvbGxlY3RvciI6IlkiLCJ1c2VyRGV0YWlsIjp7InVzZXJfaWQiOjEsInBlcnNvbl9pZCI6MTI1OTk2LCJ1c2VyX25hbWUiOiJzdXJlc2gwMSIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZmlyc3RfbmFtZSI6IkJoYWkiLCJtaWRkbGVfbmFtZSI6IlBhdGVsLCBCaGFpIiwiZnVsbF9uYW1lIjoiTXIuIEJoYWkgTGFsIFBhdGVsIiwib3JnX2lkIjoxMDI0NX0sImRlcGxveW1lbnRLZXkiOiJmcm9udHJvbGxvY2FsIiwiaXAiOiI6OmZmZmY6MTkyLjE2OC42NS4xIiwiZGJDb25maWciOnsiaGFzU2VwYXJhdGVEYiI6ZmFsc2UsInNlcGFyYXRlRGJDb25mZyI6eyJ1c2VyIjoicG9zdGdyZXMiLCJob3N0IjoiZm50bHNhYXNkZXYucG9zdGdyZXMuZGF0YWJhc2UuYXp1cmUuY29tIiwiZGF0YWJhc2UiOiJwb3N0Z3JlcyIsInBhc3N3b3JkIjoiU2VhdHRsZSExMjM0NSIsInBvcnQiOiI1NDMyIiwic3NsIjp0cnVlLCJtYXgiOjIsImNvbm5lY3Rpb25UaW1lb3V0TWlsbGlzIjowfSwiaGFzU2VwYXJhdGVTY2hlbWEiOmZhbHNlLCJzY2hlbWFOYW1lIjoicHVibGljIn0sImlhdCI6MTcxMTA5ODg5MywiZXhwIjoxNzExMTM0ODkzfQ.UgMFqIBzemOGLRXoip7dcDuTzfpMvLBDm171Bg2FR88",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "POST",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vd3d3LmZyb250cm9sLmNvbS8iLCJ1c2VyTmFtZSI6InN1cmVzaDAxIiwidXNlckxhbmd1YWdlIjoiVVMiLCJ0ZW5hbnRJZCI6MSwibmFtZUlERm9ybWF0IjoiIiwiZGVidWdNb2RlIjoiTiIsImxvZ0NvbGxlY3RvciI6IlkiLCJ1c2VyRGV0YWlsIjp7InVzZXJfaWQiOjEsInBlcnNvbl9pZCI6MTI1OTk2LCJ1c2VyX25hbWUiOiJzdXJlc2gwMSIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZmlyc3RfbmFtZSI6IkJoYWkiLCJtaWRkbGVfbmFtZSI6IlBhdGVsLCBCaGFpIiwiZnVsbF9uYW1lIjoiTXIuIEJoYWkgTGFsIFBhdGVsIiwib3JnX2lkIjoxMDI0NX0sImRlcGxveW1lbnRLZXkiOiJmcm9udHJvbGxvY2FsIiwiaXAiOiI6OmZmZmY6MTkyLjE2OC42NS4xIiwiZGJDb25maWciOnsiaGFzU2VwYXJhdGVEYiI6ZmFsc2UsInNlcGFyYXRlRGJDb25mZyI6eyJ1c2VyIjoicG9zdGdyZXMiLCJob3N0IjoiZm50bHNhYXNkZXYucG9zdGdyZXMuZGF0YWJhc2UuYXp1cmUuY29tIiwiZGF0YWJhc2UiOiJwb3N0Z3JlcyIsInBhc3N3b3JkIjoiU2VhdHRsZSExMjM0NSIsInBvcnQiOiI1NDMyIiwic3NsIjp0cnVlLCJtYXgiOjIsImNvbm5lY3Rpb25UaW1lb3V0TWlsbGlzIjowfSwiaGFzU2VwYXJhdGVTY2hlbWEiOmZhbHNlLCJzY2hlbWFOYW1lIjoicHVibGljIn0sImlhdCI6MTcxMDMxOTg3MCwiZXhwIjoxNzEwMzU1ODcwfQ.JjnEjcBG25GH8DGk_lQJ5-fz3H1SvpwqpE76C0enrJ4",
+              "type": "text",
+              "disabled": true
+            }
+          ],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {
+                "key": "spfile",
+                "type": "file",
+                "src": "/Users/chetanmahawar/Downloads/bluelogo.png"
+              },
+              {
+                "key": "destinationFolderId",
+                "value": "6",
+                "type": "text"
+              },
+              {
+                "key": "projectId",
+                "value": "240546",
+                "type": "text"
+              },
+              {
+                "key": "category",
+                "value": "010",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "value": "TEST",
+                "type": "text"
+              }
+            ]
+          },
+          "url": {
+            "raw": "{{base_url}}/dms/uploadtosharepoint",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "dms",
+              "uploadtosharepoint"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-c6737a01-f5b8-4943-a78c-68dc4e7c70de"
+      },
+      {
+        "name": "Query",
+        "id": "406abce2-54bd-44f7-8b4c-4416d9689f9b",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "bearer",
+            "bearer": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vd3d3LmZyb250cm9sLmNvbS8iLCJ1c2VyTmFtZSI6InN1cmVzaDAxIiwidXNlckxhbmd1YWdlIjoiVVMiLCJ0ZW5hbnRJZCI6MSwibmFtZUlERm9ybWF0IjoiIiwiZGVidWdNb2RlIjoibiIsImxvZ0NvbGxlY3RvciI6IlkiLCJ1c2VyRGV0YWlsIjp7InVzZXJfaWQiOjEsInBlcnNvbl9pZCI6MTI1OTk2LCJ1c2VyX25hbWUiOiJzdXJlc2gwMSIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZmlyc3RfbmFtZSI6IkJoYWkiLCJtaWRkbGVfbmFtZSI6IlBhdGVsLCBCaGFpIiwiZnVsbF9uYW1lIjoiTXIuIEJoYWkgTGFsIFBhdGVsIiwib3JnX2lkIjoxMDI0NX0sImRlcGxveW1lbnRLZXkiOiJwcm9kIiwiaXAiOiI6OmZmZmY6MTY5LjI1NC4xMzAuMSIsImRiQ29uZmlnIjp7Imhhc1NlcGFyYXRlRGIiOmZhbHNlLCJoYXNTZXBhcmF0ZVNjaGVtYSI6ZmFsc2V9LCJpYXQiOjE3MTI2NTc2ODMsImV4cCI6MTcxMjY5MzY4M30._OvoiFpi9aZaQhmv5DOHcD8fNVTzg1XsKlRySjP-d3c",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://bedevsaas.frontrol.com/api/user-profile/profilePhoto?size=32&person_id=125996",
+            "protocol": "https",
+            "host": [
+              "bedevsaas",
+              "frontrol",
+              "com"
+            ],
+            "path": [
+              "api",
+              "user-profile",
+              "profilePhoto"
+            ],
+            "query": [
+              {
+                "key": "size",
+                "value": "32"
+              },
+              {
+                "key": "person_id",
+                "value": "125996"
+              }
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-406abce2-54bd-44f7-8b4c-4416d9689f9b"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "3594d661-95dd-4b6d-b828-86ec154b0a07",
+      "name": "New Collection - Updated - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:34:28.000Z",
+      "createdAt": "2024-11-14T23:34:27.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-3594d661-95dd-4b6d-b828-86ec154b0a07"
+    },
+    "item": [
+      {
+        "name": "test",
+        "id": "51df0a3f-639c-44c9-9262-430ae70e84e6",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://wp.login.com",
+            "protocol": "https",
+            "host": [
+              "wp",
+              "login",
+              "com"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-51df0a3f-639c-44c9-9262-430ae70e84e6"
       }
     ]
   },
@@ -315,18 +629,53 @@
   },
   {
     "info": {
-      "_postman_id": "11eed5d4-bfd1-4775-94d3-a253da3fe26d",
+      "_postman_id": "ae4a5053-681f-4f29-a10c-1d219052f6e9",
+      "name": "New Collection - Updated - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:35:45.000Z",
+      "createdAt": "2024-11-14T23:35:45.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-ae4a5053-681f-4f29-a10c-1d219052f6e9"
+    },
+    "item": [
+      {
+        "name": "test",
+        "id": "eb5606f9-d8f3-4ea4-b081-1d6e2eb6c1ea",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://wp.login.com",
+            "protocol": "https",
+            "host": [
+              "wp",
+              "login",
+              "com"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-eb5606f9-d8f3-4ea4-b081-1d6e2eb6c1ea"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "4ec5fd46-5733-445d-9ce1-d62e5f5e0098",
       "name": "Products - Updated - Updated",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2024-11-14T23:20:02.000Z",
-      "createdAt": "2023-03-21T18:25:34.000Z",
-      "lastUpdatedBy": "19388008",
-      "uid": "19388008-11eed5d4-bfd1-4775-94d3-a253da3fe26d"
+      "updatedAt": "2024-11-14T23:34:29.000Z",
+      "createdAt": "2024-11-14T23:34:28.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-4ec5fd46-5733-445d-9ce1-d62e5f5e0098"
     },
     "item": [
       {
         "name": "Add new product",
-        "id": "5838bcc3-e9ec-419f-b430-b8ceff0cd5fe",
+        "id": "ecf37721-0d6a-4aad-b832-41749bcd20a5",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
@@ -369,24 +718,118 @@
           }
         },
         "response": [],
-        "uid": "19388008-5838bcc3-e9ec-419f-b430-b8ceff0cd5fe"
+        "uid": "39752485-ecf37721-0d6a-4aad-b832-41749bcd20a5"
       }
     ]
   },
   {
     "info": {
-      "_postman_id": "5bfb2baa-89a6-41f5-a97d-787986b4e7c6",
+      "_postman_id": "a9cdc117-0871-4817-8652-704e9fb1d5c6",
+      "name": "Products - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:35:46.000Z",
+      "createdAt": "2024-11-14T23:35:46.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-a9cdc117-0871-4817-8652-704e9fb1d5c6"
+    },
+    "item": [
+      {
+        "name": "Add new product",
+        "id": "1aaa4c1e-3d9a-448f-a163-5fc6ee71040e",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "bearer",
+            "bearer": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjpudWxsLCJtaWRkbGVOYW1lIjpudWxsLCJsYXN0TmFtZSI6bnVsbCwiZW1haWxJZCI6InByb2ZpbGVvZmNoZXRhbjk4QGdtYWlsLmNvbSIsIm1vYmlsZU51bWJlciI6Ijg3Mzg3MjgzMjMiLCJnZW5kZXIiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMjhUMTg6NTM6NDIuMTI3WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMjhUMTg6NTM6NDIuMTI3WiIsInJvbGUiOm51bGwsImlzQWN0aXZlIjp0cnVlLCJ1dWlkIjoiVTg5NGU2OGZjLTkyZGQtNDZiNi04MWI1LTQyZGQiLCJpYXQiOjE2ODAxMDk0MzF9.bFm2giVpj6fCxLFs-j5q_XjrFxn0o1diVq9V1ThijyE",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "POST",
+          "header": [
+            {
+              "key": "x_auth_token",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjpudWxsLCJtaWRkbGVOYW1lIjpudWxsLCJsYXN0TmFtZSI6bnVsbCwiZW1haWxJZCI6InByb2ZpbGVvZmNoZXRhbjk4QGdtYWlsLmNvbSIsIm1vYmlsZU51bWJlciI6Ijg3Mzg3MjgzMjMiLCJnZW5kZXIiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMjhUMTg6NTM6NDIuMTI3WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMjhUMTg6NTM6NDIuMTI3WiIsInJvbGUiOm51bGwsImlzQWN0aXZlIjp0cnVlLCJ1dWlkIjoiVTg5NGU2OGZjLTkyZGQtNDZiNi04MWI1LTQyZGQiLCJpYXQiOjE2ODAxMDk0MzF9.bFm2giVpj6fCxLFs-j5q_XjrFxn0o1diVq9V1ThijyE",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"title\" : \"dog head cap\",\n    \"description\" : \"white and black mix shade of dog head cap with multiple stones\",\n    \"actualPrice\" : 100,\n    \"sellingPrice\" : 80,\n    \"category\" : \"dog assesories\",\n    \"specifications\" : {},\n    \"status\" : \"active\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/quizs",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "quizs"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-1aaa4c1e-3d9a-448f-a163-5fc6ee71040e"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "4e07c8a4-fe49-432f-b785-4607afd67e9d",
+      "name": "test",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T21:23:44.000Z",
+      "createdAt": "2024-11-14T21:23:10.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-4e07c8a4-fe49-432f-b785-4607afd67e9d"
+    },
+    "item": [
+      {
+        "name": "New Request",
+        "id": "919f4b74-24ac-4f19-9a0d-59fc994a79c3",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://login.com",
+            "protocol": "https",
+            "host": [
+              "login",
+              "com"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-919f4b74-24ac-4f19-9a0d-59fc994a79c3"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "84f01d2c-0f0d-457c-8cfd-a0175f4881ba",
       "name": "Users - Updated - Updated",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2024-11-14T23:20:04.000Z",
-      "createdAt": "2023-03-19T17:12:15.000Z",
-      "lastUpdatedBy": "19388008",
-      "uid": "19388008-5bfb2baa-89a6-41f5-a97d-787986b4e7c6"
+      "updatedAt": "2024-11-14T23:34:30.000Z",
+      "createdAt": "2024-11-14T23:34:29.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-84f01d2c-0f0d-457c-8cfd-a0175f4881ba"
     },
     "item": [
       {
         "name": "Gell All Users",
-        "id": "82773e0f-9266-43fb-846e-e17dcaa0d841",
+        "id": "6ac33bbd-54ee-48c2-9c81-45bd3f9f49f2",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
@@ -398,7 +841,36 @@
           }
         },
         "response": [],
-        "uid": "19388008-82773e0f-9266-43fb-846e-e17dcaa0d841"
+        "uid": "39752485-6ac33bbd-54ee-48c2-9c81-45bd3f9f49f2"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "9ecdee48-4bdf-4755-8925-0dc7e4724102",
+      "name": "Users - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:35:48.000Z",
+      "createdAt": "2024-11-14T23:35:47.000Z",
+      "lastUpdatedBy": "39752485",
+      "uid": "39752485-9ecdee48-4bdf-4755-8925-0dc7e4724102"
+    },
+    "item": [
+      {
+        "name": "Gell All Users",
+        "id": "96503904-a8d0-42fa-b246-d460393821d3",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": ""
+          }
+        },
+        "response": [],
+        "uid": "39752485-96503904-a8d0-42fa-b246-d460393821d3"
       }
     ]
   }
