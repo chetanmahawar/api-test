@@ -1,56 +1,405 @@
 [
   {
-    "id": "91c7bfc3-0ea5-4119-bf92-f23a5cab13a4",
-    "name": "Addresses - Updated - Updated",
-    "owner": "19388008",
-    "createdAt": "2023-03-19T17:15:53.000Z",
-    "updatedAt": "2024-11-14T23:19:56.000Z",
-    "uid": "19388008-91c7bfc3-0ea5-4119-bf92-f23a5cab13a4",
-    "isPublic": false
+    "info": {
+      "_postman_id": "91c7bfc3-0ea5-4119-bf92-f23a5cab13a4",
+      "name": "Addresses - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:19:56.000Z",
+      "createdAt": "2023-03-19T17:15:53.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-91c7bfc3-0ea5-4119-bf92-f23a5cab13a4"
+    },
+    "item": [
+      {
+        "name": "testing test",
+        "id": "5cfc66ac-96f0-48a0-bf84-e864aa4992d3",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:3000/api/dms/uploadtosharepoint",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "3000",
+            "path": [
+              "api",
+              "dms",
+              "uploadtosharepoint"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "19388008-5cfc66ac-96f0-48a0-bf84-e864aa4992d3"
+      }
+    ]
   },
   {
-    "id": "7e8cf0be-d97a-498c-9b44-16a282b89c9e",
-    "name": "Authentication - Updated - Updated",
-    "owner": "19388008",
-    "createdAt": "2023-03-12T20:20:11.000Z",
-    "updatedAt": "2024-11-14T23:19:57.000Z",
-    "uid": "19388008-7e8cf0be-d97a-498c-9b44-16a282b89c9e",
-    "isPublic": false
+    "info": {
+      "_postman_id": "7e8cf0be-d97a-498c-9b44-16a282b89c9e",
+      "name": "Authentication - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:19:57.000Z",
+      "createdAt": "2023-03-12T20:20:11.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-7e8cf0be-d97a-498c-9b44-16a282b89c9e"
+    },
+    "item": [
+      {
+        "name": "Login",
+        "id": "5bb6d06a-912d-4e2e-b16d-b30d9f8b0269",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"emailId\" : \"profileofchetan123@gmail.com\",\n    \"password\" : \"1234\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/auth/login",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "auth",
+              "login"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "19388008-5bb6d06a-912d-4e2e-b16d-b30d9f8b0269"
+      },
+      {
+        "name": "Register",
+        "id": "591431db-4edb-41c9-ba80-5063908ceaf0",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n   \"emailId\" : \"profileofchetan@gmail.com\",\n   \"mobileNumber\" : \"9823892389\",\n   \"password\" : \"Mango8800@\"\n   \n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/auth/register",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "auth",
+              "register"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "19388008-591431db-4edb-41c9-ba80-5063908ceaf0"
+      }
+    ]
   },
   {
-    "id": "89a81b04-2480-4cc3-a1bb-b5e31d96a997",
-    "name": "Login - Updated - Updated",
-    "owner": "19388008",
-    "createdAt": "2023-03-09T14:43:26.000Z",
-    "updatedAt": "2024-11-14T23:19:59.000Z",
-    "uid": "19388008-89a81b04-2480-4cc3-a1bb-b5e31d96a997",
-    "isPublic": false
+    "info": {
+      "_postman_id": "89a81b04-2480-4cc3-a1bb-b5e31d96a997",
+      "name": "Login - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:19:59.000Z",
+      "createdAt": "2023-03-09T14:43:26.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-89a81b04-2480-4cc3-a1bb-b5e31d96a997"
+    },
+    "item": [
+      {
+        "name": "Login - User",
+        "id": "29a1486c-747f-4100-a347-63698d8db38a",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"username\": \"suresh01\",\n    \"userpassword\": \"welcome1\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{bsseurl}}/users/login/23243",
+            "host": [
+              "{{bsseurl}}"
+            ],
+            "path": [
+              "users",
+              "login",
+              "23243"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "19388008-29a1486c-747f-4100-a347-63698d8db38a"
+      },
+      {
+        "name": "CRUD",
+        "id": "c487fde4-1e0e-4c18-aee5-b4d7e19cfd66",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "bearer",
+            "bearer": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vd3d3LmZyb250cm9sLmNvbS8iLCJ1c2VyTmFtZSI6InN1cmVzaDAxIiwidXNlckxhbmd1YWdlIjoiVVMiLCJ0ZW5hbnRJZCI6MSwibmFtZUlERm9ybWF0IjoiIiwiZGVidWdNb2RlIjoiTiIsImxvZ0NvbGxlY3RvciI6IlkiLCJ1c2VyRGV0YWlsIjp7InVzZXJfaWQiOjEsInBlcnNvbl9pZCI6MTI1OTk2LCJ1c2VyX25hbWUiOiJzdXJlc2gwMSIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZmlyc3RfbmFtZSI6IkJoYWkiLCJtaWRkbGVfbmFtZSI6IlBhdGVsLCBCaGFpIiwiZnVsbF9uYW1lIjoiTXIuIEJoYWkgTGFsIFBhdGVsIiwib3JnX2lkIjoxMDI0NX0sImRlcGxveW1lbnRLZXkiOiJmcm9udHJvbGxvY2FsIiwiaXAiOiI6OmZmZmY6MTkyLjE2OC42NS4xIiwiZGJDb25maWciOnsiaGFzU2VwYXJhdGVEYiI6ZmFsc2UsInNlcGFyYXRlRGJDb25mZyI6eyJ1c2VyIjoicG9zdGdyZXMiLCJob3N0IjoiZm50bHNhYXNkZXYucG9zdGdyZXMuZGF0YWJhc2UuYXp1cmUuY29tIiwiZGF0YWJhc2UiOiJwb3N0Z3JlcyIsInBhc3N3b3JkIjoiU2VhdHRsZSExMjM0NSIsInBvcnQiOiI1NDMyIiwic3NsIjp0cnVlLCJtYXgiOjIsImNvbm5lY3Rpb25UaW1lb3V0TWlsbGlzIjowfSwiaGFzU2VwYXJhdGVTY2hlbWEiOmZhbHNlLCJzY2hlbWFOYW1lIjoicHVibGljIn0sImlhdCI6MTcxMTA5ODg5MywiZXhwIjoxNzExMTM0ODkzfQ.UgMFqIBzemOGLRXoip7dcDuTzfpMvLBDm171Bg2FR88",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "POST",
+          "header": [
+            {
+              "key": "Authorization",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vd3d3LmZyb250cm9sLmNvbS8iLCJ1c2VyTmFtZSI6InN1cmVzaDAxIiwidXNlckxhbmd1YWdlIjoiVVMiLCJ0ZW5hbnRJZCI6MSwibmFtZUlERm9ybWF0IjoiIiwiZGVidWdNb2RlIjoiTiIsImxvZ0NvbGxlY3RvciI6IlkiLCJ1c2VyRGV0YWlsIjp7InVzZXJfaWQiOjEsInBlcnNvbl9pZCI6MTI1OTk2LCJ1c2VyX25hbWUiOiJzdXJlc2gwMSIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZmlyc3RfbmFtZSI6IkJoYWkiLCJtaWRkbGVfbmFtZSI6IlBhdGVsLCBCaGFpIiwiZnVsbF9uYW1lIjoiTXIuIEJoYWkgTGFsIFBhdGVsIiwib3JnX2lkIjoxMDI0NX0sImRlcGxveW1lbnRLZXkiOiJmcm9udHJvbGxvY2FsIiwiaXAiOiI6OmZmZmY6MTkyLjE2OC42NS4xIiwiZGJDb25maWciOnsiaGFzU2VwYXJhdGVEYiI6ZmFsc2UsInNlcGFyYXRlRGJDb25mZyI6eyJ1c2VyIjoicG9zdGdyZXMiLCJob3N0IjoiZm50bHNhYXNkZXYucG9zdGdyZXMuZGF0YWJhc2UuYXp1cmUuY29tIiwiZGF0YWJhc2UiOiJwb3N0Z3JlcyIsInBhc3N3b3JkIjoiU2VhdHRsZSExMjM0NSIsInBvcnQiOiI1NDMyIiwic3NsIjp0cnVlLCJtYXgiOjIsImNvbm5lY3Rpb25UaW1lb3V0TWlsbGlzIjowfSwiaGFzU2VwYXJhdGVTY2hlbWEiOmZhbHNlLCJzY2hlbWFOYW1lIjoicHVibGljIn0sImlhdCI6MTcxMDMxOTg3MCwiZXhwIjoxNzEwMzU1ODcwfQ.JjnEjcBG25GH8DGk_lQJ5-fz3H1SvpwqpE76C0enrJ4",
+              "type": "text",
+              "disabled": true
+            }
+          ],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {
+                "key": "spfile",
+                "type": "file",
+                "src": "/Users/chetanmahawar/Downloads/bluelogo.png"
+              },
+              {
+                "key": "destinationFolderId",
+                "value": "6",
+                "type": "text"
+              },
+              {
+                "key": "projectId",
+                "value": "240546",
+                "type": "text"
+              },
+              {
+                "key": "category",
+                "value": "010",
+                "type": "text"
+              },
+              {
+                "key": "description",
+                "value": "TEST",
+                "type": "text"
+              }
+            ]
+          },
+          "url": {
+            "raw": "{{base_url}}/dms/uploadtosharepoint",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "dms",
+              "uploadtosharepoint"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "19388008-c487fde4-1e0e-4c18-aee5-b4d7e19cfd66"
+      },
+      {
+        "name": "Query",
+        "id": "55c58ffd-d82b-4e52-9ca8-f0ca9d16faca",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "bearer",
+            "bearer": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vd3d3LmZyb250cm9sLmNvbS8iLCJ1c2VyTmFtZSI6InN1cmVzaDAxIiwidXNlckxhbmd1YWdlIjoiVVMiLCJ0ZW5hbnRJZCI6MSwibmFtZUlERm9ybWF0IjoiIiwiZGVidWdNb2RlIjoibiIsImxvZ0NvbGxlY3RvciI6IlkiLCJ1c2VyRGV0YWlsIjp7InVzZXJfaWQiOjEsInBlcnNvbl9pZCI6MTI1OTk2LCJ1c2VyX25hbWUiOiJzdXJlc2gwMSIsImxhc3RfbmFtZSI6IlBhdGVsIiwiZmlyc3RfbmFtZSI6IkJoYWkiLCJtaWRkbGVfbmFtZSI6IlBhdGVsLCBCaGFpIiwiZnVsbF9uYW1lIjoiTXIuIEJoYWkgTGFsIFBhdGVsIiwib3JnX2lkIjoxMDI0NX0sImRlcGxveW1lbnRLZXkiOiJwcm9kIiwiaXAiOiI6OmZmZmY6MTY5LjI1NC4xMzAuMSIsImRiQ29uZmlnIjp7Imhhc1NlcGFyYXRlRGIiOmZhbHNlLCJoYXNTZXBhcmF0ZVNjaGVtYSI6ZmFsc2V9LCJpYXQiOjE3MTI2NTc2ODMsImV4cCI6MTcxMjY5MzY4M30._OvoiFpi9aZaQhmv5DOHcD8fNVTzg1XsKlRySjP-d3c",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://bedevsaas.frontrol.com/api/user-profile/profilePhoto?size=32&person_id=125996",
+            "protocol": "https",
+            "host": [
+              "bedevsaas",
+              "frontrol",
+              "com"
+            ],
+            "path": [
+              "api",
+              "user-profile",
+              "profilePhoto"
+            ],
+            "query": [
+              {
+                "key": "size",
+                "value": "32"
+              },
+              {
+                "key": "person_id",
+                "value": "125996"
+              }
+            ]
+          }
+        },
+        "response": [],
+        "uid": "19388008-55c58ffd-d82b-4e52-9ca8-f0ca9d16faca"
+      }
+    ]
   },
   {
-    "id": "e90d02db-d36e-44d0-b186-5e80cd208141",
-    "name": "New Collection - Updated - Updated - Updated",
-    "owner": "39752485",
-    "createdAt": "2024-11-14T21:16:22.000Z",
-    "updatedAt": "2024-11-14T23:20:00.000Z",
-    "uid": "39752485-e90d02db-d36e-44d0-b186-5e80cd208141",
-    "isPublic": false
+    "info": {
+      "_postman_id": "e90d02db-d36e-44d0-b186-5e80cd208141",
+      "name": "New Collection - Updated - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:20:00.000Z",
+      "createdAt": "2024-11-14T21:16:22.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "39752485-e90d02db-d36e-44d0-b186-5e80cd208141"
+    },
+    "item": [
+      {
+        "name": "test",
+        "id": "f9589772-e25e-4316-abfd-0aa16cb8d2db",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "https://wp.login.com",
+            "protocol": "https",
+            "host": [
+              "wp",
+              "login",
+              "com"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "39752485-f9589772-e25e-4316-abfd-0aa16cb8d2db"
+      }
+    ]
   },
   {
-    "id": "11eed5d4-bfd1-4775-94d3-a253da3fe26d",
-    "name": "Products - Updated - Updated",
-    "owner": "19388008",
-    "createdAt": "2023-03-21T18:25:34.000Z",
-    "updatedAt": "2024-11-14T23:20:02.000Z",
-    "uid": "19388008-11eed5d4-bfd1-4775-94d3-a253da3fe26d",
-    "isPublic": false
+    "info": {
+      "_postman_id": "11eed5d4-bfd1-4775-94d3-a253da3fe26d",
+      "name": "Products - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:20:02.000Z",
+      "createdAt": "2023-03-21T18:25:34.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-11eed5d4-bfd1-4775-94d3-a253da3fe26d"
+    },
+    "item": [
+      {
+        "name": "Add new product",
+        "id": "5838bcc3-e9ec-419f-b430-b8ceff0cd5fe",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "auth": {
+            "type": "bearer",
+            "bearer": [
+              {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjpudWxsLCJtaWRkbGVOYW1lIjpudWxsLCJsYXN0TmFtZSI6bnVsbCwiZW1haWxJZCI6InByb2ZpbGVvZmNoZXRhbjk4QGdtYWlsLmNvbSIsIm1vYmlsZU51bWJlciI6Ijg3Mzg3MjgzMjMiLCJnZW5kZXIiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMjhUMTg6NTM6NDIuMTI3WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMjhUMTg6NTM6NDIuMTI3WiIsInJvbGUiOm51bGwsImlzQWN0aXZlIjp0cnVlLCJ1dWlkIjoiVTg5NGU2OGZjLTkyZGQtNDZiNi04MWI1LTQyZGQiLCJpYXQiOjE2ODAxMDk0MzF9.bFm2giVpj6fCxLFs-j5q_XjrFxn0o1diVq9V1ThijyE",
+                "type": "string"
+              }
+            ]
+          },
+          "method": "POST",
+          "header": [
+            {
+              "key": "x_auth_token",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZmlyc3ROYW1lIjpudWxsLCJtaWRkbGVOYW1lIjpudWxsLCJsYXN0TmFtZSI6bnVsbCwiZW1haWxJZCI6InByb2ZpbGVvZmNoZXRhbjk4QGdtYWlsLmNvbSIsIm1vYmlsZU51bWJlciI6Ijg3Mzg3MjgzMjMiLCJnZW5kZXIiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjMtMDMtMjhUMTg6NTM6NDIuMTI3WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDMtMjhUMTg6NTM6NDIuMTI3WiIsInJvbGUiOm51bGwsImlzQWN0aXZlIjp0cnVlLCJ1dWlkIjoiVTg5NGU2OGZjLTkyZGQtNDZiNi04MWI1LTQyZGQiLCJpYXQiOjE2ODAxMDk0MzF9.bFm2giVpj6fCxLFs-j5q_XjrFxn0o1diVq9V1ThijyE",
+              "type": "text"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"title\" : \"dog head cap\",\n    \"description\" : \"white and black mix shade of dog head cap with multiple stones\",\n    \"actualPrice\" : 100,\n    \"sellingPrice\" : 80,\n    \"category\" : \"dog assesories\",\n    \"specifications\" : {},\n    \"status\" : \"active\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/quizs",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "quizs"
+            ]
+          }
+        },
+        "response": [],
+        "uid": "19388008-5838bcc3-e9ec-419f-b430-b8ceff0cd5fe"
+      }
+    ]
   },
   {
-    "id": "5bfb2baa-89a6-41f5-a97d-787986b4e7c6",
-    "name": "Users - Updated - Updated",
-    "owner": "19388008",
-    "createdAt": "2023-03-19T17:12:15.000Z",
-    "updatedAt": "2024-11-14T23:20:04.000Z",
-    "uid": "19388008-5bfb2baa-89a6-41f5-a97d-787986b4e7c6",
-    "isPublic": false
+    "info": {
+      "_postman_id": "5bfb2baa-89a6-41f5-a97d-787986b4e7c6",
+      "name": "Users - Updated - Updated",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:20:04.000Z",
+      "createdAt": "2023-03-19T17:12:15.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-5bfb2baa-89a6-41f5-a97d-787986b4e7c6"
+    },
+    "item": [
+      {
+        "name": "Gell All Users",
+        "id": "82773e0f-9266-43fb-846e-e17dcaa0d841",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": ""
+          }
+        },
+        "response": [],
+        "uid": "19388008-82773e0f-9266-43fb-846e-e17dcaa0d841"
+      }
+    ]
   }
 ]
