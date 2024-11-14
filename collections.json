@@ -1,18 +1,922 @@
 [
   {
     "info": {
-      "_postman_id": "328595b8-825d-4161-b9ed-380cc387f848",
+      "_postman_id": "8e277eb6-979d-424d-a43c-eca3abff6e5b",
+      "name": "12",
+      "description": "# 🚀 Get started here\n\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\n\n## 🔖 **How to use this template**\n\n#### **Step 1: Send requests**\n\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\n\nThis collection contains each of these [request](https://learning.postman.com/docs/sending-requests/requests/) types. Open each request and click \"Send\" to see what happens.\n\n#### **Step 2: View responses**\n\nObserve the response tab for status code (200 OK), response time, and size.\n\n#### **Step 3: Send new Body data**\n\nUpdate or add new data in \"Body\" in the POST request. Typically, Body data is also used in PUT request.\n\n```\n{\n    \"name\": \"Add your name in the body\"\n}\n\n ```\n\n#### **Step 4: Update the variable**\n\nVariables enable you to store and reuse values in Postman. We have created a [variable](https://learning.postman.com/docs/sending-requests/variables/) called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\n\n#### **Step 5: Add tests in the \"Scripts\" tab**\n\nAdding tests to your requests can help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \"Test Results\" tab.\n\n<img src=\"https://content.pstmn.io/fa30ea0a-373d-4545-a668-e7b283cca343/aW1hZ2UucG5n\" alt=\"\" height=\"1530\" width=\"2162\">\n\n## 💪 Pro tips\n\n- Use folders to group related requests and organize the collection.\n    \n- Add more [scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/) to verify if the API works as expected and execute workflows.\n    \n\n## 💡Related templates\n\n[API testing basics](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9a37a28-055b-49cd-8c7e-97494a21eb54&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[API documentation](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9c28f47-1253-44af-a2f3-20dce4da1f18&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[Authorization methods](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=31a9a6ed-4cdf-4ced-984c-d12c9aec1c27&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:57:43.000Z",
+      "createdAt": "2024-11-14T23:57:30.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-8e277eb6-979d-424d-a43c-eca3abff6e5b"
+    },
+    "item": [
+      {
+        "name": "Get data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {",
+                "    pm.response.to.have.status(200);",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "f0421fdb-1bc7-47c8-b897-39e63b35f181",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+        },
+        "response": [],
+        "uid": "19388008-f0421fdb-1bc7-47c8-b897-39e63b35f181"
+      },
+      {
+        "name": "Post data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful POST request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "13e6ed32-5cb7-4be8-a66a-c25c47b446d7",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n\t\"name\": \"Add your name in the body\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ]
+          },
+          "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+        },
+        "response": [],
+        "uid": "19388008-13e6ed32-5cb7-4be8-a66a-c25c47b446d7"
+      },
+      {
+        "name": "Update data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful PUT request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "638d5367-d209-4782-b327-4c438a5142bc",
+        "request": {
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n\t\"name\": \"Add your name in the body\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+        },
+        "response": [],
+        "uid": "19388008-638d5367-d209-4782-b327-4c438a5142bc"
+      },
+      {
+        "name": "Delete data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful DELETE request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "dacad4f6-fa98-4cee-9715-dd8793101f69",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+        },
+        "response": [],
+        "uid": "19388008-dacad4f6-fa98-4cee-9715-dd8793101f69"
+      }
+    ],
+    "event": [
+      {
+        "listen": "prerequest",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      },
+      {
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      }
+    ],
+    "variable": [
+      {
+        "id": "530bbdd9-38d3-441e-92dc-61f171c18dc2",
+        "key": "id",
+        "value": "1"
+      },
+      {
+        "id": "57b5ecc1-1ffd-4eb5-a9a4-fa78c5251c5d",
+        "key": "base_url",
+        "value": "https://postman-rest-api-learner.glitch.me/"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "90c0b486-c366-4ac0-987c-d553ccc1440f",
+      "name": "13",
+      "description": "# 🚀 Get started here\n\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\n\n## 🔖 **How to use this template**\n\n#### **Step 1: Send requests**\n\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\n\nThis collection contains each of these [request](https://learning.postman.com/docs/sending-requests/requests/) types. Open each request and click \"Send\" to see what happens.\n\n#### **Step 2: View responses**\n\nObserve the response tab for status code (200 OK), response time, and size.\n\n#### **Step 3: Send new Body data**\n\nUpdate or add new data in \"Body\" in the POST request. Typically, Body data is also used in PUT request.\n\n```\n{\n    \"name\": \"Add your name in the body\"\n}\n\n ```\n\n#### **Step 4: Update the variable**\n\nVariables enable you to store and reuse values in Postman. We have created a [variable](https://learning.postman.com/docs/sending-requests/variables/) called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\n\n#### **Step 5: Add tests in the \"Scripts\" tab**\n\nAdding tests to your requests can help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \"Test Results\" tab.\n\n<img src=\"https://content.pstmn.io/fa30ea0a-373d-4545-a668-e7b283cca343/aW1hZ2UucG5n\" alt=\"\" height=\"1530\" width=\"2162\">\n\n## 💪 Pro tips\n\n- Use folders to group related requests and organize the collection.\n    \n- Add more [scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/) to verify if the API works as expected and execute workflows.\n    \n\n## 💡Related templates\n\n[API testing basics](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9a37a28-055b-49cd-8c7e-97494a21eb54&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[API documentation](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9c28f47-1253-44af-a2f3-20dce4da1f18&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[Authorization methods](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=31a9a6ed-4cdf-4ced-984c-d12c9aec1c27&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:57:59.000Z",
+      "createdAt": "2024-11-14T23:57:34.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-90c0b486-c366-4ac0-987c-d553ccc1440f"
+    },
+    "item": [
+      {
+        "name": "Get data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {",
+                "    pm.response.to.have.status(200);",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "a0905cca-7002-4432-b968-77a7ecc89df6",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+        },
+        "response": [],
+        "uid": "19388008-a0905cca-7002-4432-b968-77a7ecc89df6"
+      },
+      {
+        "name": "Post data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful POST request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "dea6c862-8328-4033-a354-d39be46dd147",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n\t\"name\": \"Add your name in the body\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ]
+          },
+          "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+        },
+        "response": [],
+        "uid": "19388008-dea6c862-8328-4033-a354-d39be46dd147"
+      },
+      {
+        "name": "Update data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful PUT request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "1a2dff75-6f0a-412c-bf02-a1933ccf5b15",
+        "request": {
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n\t\"name\": \"Add your name in the body\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+        },
+        "response": [],
+        "uid": "19388008-1a2dff75-6f0a-412c-bf02-a1933ccf5b15"
+      },
+      {
+        "name": "Delete data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful DELETE request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "b7e9faea-d13b-40e3-9125-5d891e3f749d",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+        },
+        "response": [],
+        "uid": "19388008-b7e9faea-d13b-40e3-9125-5d891e3f749d"
+      }
+    ],
+    "event": [
+      {
+        "listen": "prerequest",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      },
+      {
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      }
+    ],
+    "variable": [
+      {
+        "id": "530bbdd9-38d3-441e-92dc-61f171c18dc2",
+        "key": "id",
+        "value": "1"
+      },
+      {
+        "id": "57b5ecc1-1ffd-4eb5-a9a4-fa78c5251c5d",
+        "key": "base_url",
+        "value": "https://postman-rest-api-learner.glitch.me/"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "8d89b833-a11a-4fe2-a6f0-f9d204ceb84f",
+      "name": "14",
+      "description": "# 🚀 Get started here\n\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\n\n## 🔖 **How to use this template**\n\n#### **Step 1: Send requests**\n\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\n\nThis collection contains each of these [request](https://learning.postman.com/docs/sending-requests/requests/) types. Open each request and click \"Send\" to see what happens.\n\n#### **Step 2: View responses**\n\nObserve the response tab for status code (200 OK), response time, and size.\n\n#### **Step 3: Send new Body data**\n\nUpdate or add new data in \"Body\" in the POST request. Typically, Body data is also used in PUT request.\n\n```\n{\n    \"name\": \"Add your name in the body\"\n}\n\n ```\n\n#### **Step 4: Update the variable**\n\nVariables enable you to store and reuse values in Postman. We have created a [variable](https://learning.postman.com/docs/sending-requests/variables/) called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\n\n#### **Step 5: Add tests in the \"Scripts\" tab**\n\nAdding tests to your requests can help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \"Test Results\" tab.\n\n<img src=\"https://content.pstmn.io/fa30ea0a-373d-4545-a668-e7b283cca343/aW1hZ2UucG5n\" alt=\"\" height=\"1530\" width=\"2162\">\n\n## 💪 Pro tips\n\n- Use folders to group related requests and organize the collection.\n    \n- Add more [scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/) to verify if the API works as expected and execute workflows.\n    \n\n## 💡Related templates\n\n[API testing basics](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9a37a28-055b-49cd-8c7e-97494a21eb54&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[API documentation](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9c28f47-1253-44af-a2f3-20dce4da1f18&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[Authorization methods](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=31a9a6ed-4cdf-4ced-984c-d12c9aec1c27&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:58:05.000Z",
+      "createdAt": "2024-11-14T23:57:36.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-8d89b833-a11a-4fe2-a6f0-f9d204ceb84f"
+    },
+    "item": [
+      {
+        "name": "Get data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {",
+                "    pm.response.to.have.status(200);",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "442428d6-28f1-499e-beaa-1e830584972e",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+        },
+        "response": [],
+        "uid": "19388008-442428d6-28f1-499e-beaa-1e830584972e"
+      },
+      {
+        "name": "Post data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful POST request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "ed406fbd-9bbc-43aa-b330-02c6f94c3b0c",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n\t\"name\": \"Add your name in the body\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ]
+          },
+          "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+        },
+        "response": [],
+        "uid": "19388008-ed406fbd-9bbc-43aa-b330-02c6f94c3b0c"
+      },
+      {
+        "name": "Update data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful PUT request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "d7ae6072-aca7-492b-98b9-8e73c5903792",
+        "request": {
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n\t\"name\": \"Add your name in the body\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+        },
+        "response": [],
+        "uid": "19388008-d7ae6072-aca7-492b-98b9-8e73c5903792"
+      },
+      {
+        "name": "Delete data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful DELETE request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "2d97fcf6-c722-4773-9d5c-fdefd42007cf",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+        },
+        "response": [],
+        "uid": "19388008-2d97fcf6-c722-4773-9d5c-fdefd42007cf"
+      }
+    ],
+    "event": [
+      {
+        "listen": "prerequest",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      },
+      {
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      }
+    ],
+    "variable": [
+      {
+        "id": "530bbdd9-38d3-441e-92dc-61f171c18dc2",
+        "key": "id",
+        "value": "1"
+      },
+      {
+        "id": "57b5ecc1-1ffd-4eb5-a9a4-fa78c5251c5d",
+        "key": "base_url",
+        "value": "https://postman-rest-api-learner.glitch.me/"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "79cbb3cc-5aec-459d-ac69-6c184dce9a40",
+      "name": "15",
+      "description": "# 🚀 Get started here\n\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\n\n## 🔖 **How to use this template**\n\n#### **Step 1: Send requests**\n\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\n\nThis collection contains each of these [request](https://learning.postman.com/docs/sending-requests/requests/) types. Open each request and click \"Send\" to see what happens.\n\n#### **Step 2: View responses**\n\nObserve the response tab for status code (200 OK), response time, and size.\n\n#### **Step 3: Send new Body data**\n\nUpdate or add new data in \"Body\" in the POST request. Typically, Body data is also used in PUT request.\n\n```\n{\n    \"name\": \"Add your name in the body\"\n}\n\n ```\n\n#### **Step 4: Update the variable**\n\nVariables enable you to store and reuse values in Postman. We have created a [variable](https://learning.postman.com/docs/sending-requests/variables/) called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\n\n#### **Step 5: Add tests in the \"Scripts\" tab**\n\nAdding tests to your requests can help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \"Test Results\" tab.\n\n<img src=\"https://content.pstmn.io/fa30ea0a-373d-4545-a668-e7b283cca343/aW1hZ2UucG5n\" alt=\"\" height=\"1530\" width=\"2162\">\n\n## 💪 Pro tips\n\n- Use folders to group related requests and organize the collection.\n    \n- Add more [scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/) to verify if the API works as expected and execute workflows.\n    \n\n## 💡Related templates\n\n[API testing basics](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9a37a28-055b-49cd-8c7e-97494a21eb54&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[API documentation](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9c28f47-1253-44af-a2f3-20dce4da1f18&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[Authorization methods](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=31a9a6ed-4cdf-4ced-984c-d12c9aec1c27&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-14T23:58:15.000Z",
+      "createdAt": "2024-11-14T23:57:53.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-79cbb3cc-5aec-459d-ac69-6c184dce9a40"
+    },
+    "item": [
+      {
+        "name": "Get data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Status code is 200\", function () {",
+                "    pm.response.to.have.status(200);",
+                "});"
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "51aa23ed-d9aa-434e-8ad1-a5a2ef1eecff",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+        },
+        "response": [],
+        "uid": "19388008-51aa23ed-d9aa-434e-8ad1-a5a2ef1eecff"
+      },
+      {
+        "name": "Post data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful POST request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "92ebe7ac-5b33-440c-a540-e22fdf8f97ca",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n\t\"name\": \"Add your name in the body\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ]
+          },
+          "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+        },
+        "response": [],
+        "uid": "19388008-92ebe7ac-5b33-440c-a540-e22fdf8f97ca"
+      },
+      {
+        "name": "Update data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful PUT request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 201, 204]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "7da7b269-1a3d-4a66-8a0d-e7c703aca1c9",
+        "request": {
+          "method": "PUT",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n\t\"name\": \"Add your name in the body\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
+        },
+        "response": [],
+        "uid": "19388008-7da7b269-1a3d-4a66-8a0d-e7c703aca1c9"
+      },
+      {
+        "name": "Delete data",
+        "event": [
+          {
+            "listen": "test",
+            "script": {
+              "exec": [
+                "pm.test(\"Successful DELETE request\", function () {",
+                "    pm.expect(pm.response.code).to.be.oneOf([200, 202, 204]);",
+                "});",
+                ""
+              ],
+              "type": "text/javascript"
+            }
+          }
+        ],
+        "id": "ce5c39aa-97a9-4b5c-a73c-1056508205ef",
+        "request": {
+          "method": "DELETE",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "{{base_url}}/info?id=1",
+            "host": [
+              "{{base_url}}"
+            ],
+            "path": [
+              "info"
+            ],
+            "query": [
+              {
+                "key": "id",
+                "value": "1"
+              }
+            ]
+          },
+          "description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
+        },
+        "response": [],
+        "uid": "19388008-ce5c39aa-97a9-4b5c-a73c-1056508205ef"
+      }
+    ],
+    "event": [
+      {
+        "listen": "prerequest",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      },
+      {
+        "listen": "test",
+        "script": {
+          "type": "text/javascript",
+          "exec": [
+            ""
+          ]
+        }
+      }
+    ],
+    "variable": [
+      {
+        "id": "530bbdd9-38d3-441e-92dc-61f171c18dc2",
+        "key": "id",
+        "value": "1"
+      },
+      {
+        "id": "57b5ecc1-1ffd-4eb5-a9a4-fa78c5251c5d",
+        "key": "base_url",
+        "value": "https://postman-rest-api-learner.glitch.me/"
+      }
+    ]
+  },
+  {
+    "info": {
+      "_postman_id": "c05fd5ff-e33e-47c3-b381-cf5ada54df74",
       "name": "FntlCustomers",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2024-11-14T23:53:20.000Z",
-      "createdAt": "2024-11-14T23:51:47.000Z",
-      "lastUpdatedBy": "39752485",
-      "uid": "39752485-328595b8-825d-4161-b9ed-380cc387f848"
+      "updatedAt": "2024-11-14T23:53:44.000Z",
+      "createdAt": "2024-11-14T23:53:44.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-c05fd5ff-e33e-47c3-b381-cf5ada54df74"
     },
     "item": [
       {
         "name": "post customer",
-        "id": "8a61a46d-898c-464e-86f3-6b057b22ce4f",
+        "id": "90deb0a4-1f7b-48f7-9708-7e6e19550998",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
@@ -49,11 +953,11 @@
           }
         },
         "response": [],
-        "uid": "39752485-8a61a46d-898c-464e-86f3-6b057b22ce4f"
+        "uid": "19388008-90deb0a4-1f7b-48f7-9708-7e6e19550998"
       },
       {
         "name": "post customer new",
-        "id": "93cd9dd3-e379-4704-b7d5-31a08a0622a9",
+        "id": "03843386-50f9-4b34-a2d0-c711e81d2e22",
         "protocolProfileBehavior": {
           "disableBodyPruning": true
         },
@@ -90,19 +994,19 @@
           }
         },
         "response": [],
-        "uid": "39752485-93cd9dd3-e379-4704-b7d5-31a08a0622a9"
+        "uid": "19388008-03843386-50f9-4b34-a2d0-c711e81d2e22"
       }
     ]
   },
   {
     "info": {
-      "_postman_id": "9b95db38-5075-41c2-9651-71f6544a2ed2",
+      "_postman_id": "ebf984b5-d2d9-498a-ae7e-4370700b41e6",
       "name": "FntlProjects",
       "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-      "updatedAt": "2024-11-14T23:51:48.000Z",
-      "createdAt": "2024-11-14T23:51:48.000Z",
-      "lastUpdatedBy": "39752485",
-      "uid": "39752485-9b95db38-5075-41c2-9651-71f6544a2ed2"
+      "updatedAt": "2024-11-14T23:53:46.000Z",
+      "createdAt": "2024-11-14T23:53:45.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-ebf984b5-d2d9-498a-ae7e-4370700b41e6"
     },
     "item": [
       {
@@ -120,7 +1024,7 @@
             }
           }
         ],
-        "id": "614e9748-1ecb-495e-8a8c-a90f9343d66d",
+        "id": "b630e03d-0eee-46f1-9a9b-3f94a96bc6e9",
         "request": {
           "method": "GET",
           "header": [],
@@ -142,7 +1046,7 @@
           "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
         },
         "response": [],
-        "uid": "39752485-614e9748-1ecb-495e-8a8c-a90f9343d66d"
+        "uid": "19388008-b630e03d-0eee-46f1-9a9b-3f94a96bc6e9"
       },
       {
         "name": "Post data",
@@ -160,7 +1064,7 @@
             }
           }
         ],
-        "id": "0a203b43-1b7c-45c1-ac23-f8301788df17",
+        "id": "13e10394-c2e3-4348-856b-a2a243a67b01",
         "request": {
           "method": "POST",
           "header": [],
@@ -185,7 +1089,7 @@
           "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
         },
         "response": [],
-        "uid": "39752485-0a203b43-1b7c-45c1-ac23-f8301788df17"
+        "uid": "19388008-13e10394-c2e3-4348-856b-a2a243a67b01"
       },
       {
         "name": "Update data",
@@ -203,7 +1107,7 @@
             }
           }
         ],
-        "id": "cbd8f733-3881-44ac-8f31-718ce87b5930",
+        "id": "024d34ba-cf33-456e-9f3e-2d5944db1863",
         "request": {
           "method": "PUT",
           "header": [],
@@ -234,7 +1138,7 @@
           "description": "This is a PUT request and it is used to overwrite an existing piece of data. For instance, after you create an entity with a POST request, you may want to modify that later. You can do that using a PUT request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful PUT request typically returns a `200 OK`, `201 Created`, or `204 No Content` response code."
         },
         "response": [],
-        "uid": "39752485-cbd8f733-3881-44ac-8f31-718ce87b5930"
+        "uid": "19388008-024d34ba-cf33-456e-9f3e-2d5944db1863"
       },
       {
         "name": "Delete data",
@@ -252,7 +1156,7 @@
             }
           }
         ],
-        "id": "5c8dba45-2b33-462e-9a28-d6817c96fd40",
+        "id": "6ba7ece4-4f40-43c4-9b4c-be7b90377347",
         "request": {
           "method": "DELETE",
           "header": [],
@@ -283,7 +1187,7 @@
           "description": "This is a DELETE request, and it is used to delete data that was previously created via a POST request. You typically identify the entity being updated by including an identifier in the URL (eg. `id=1`).\n\nA successful DELETE request typically returns a `200 OK`, `202 Accepted`, or `204 No Content` response code."
         },
         "response": [],
-        "uid": "39752485-5c8dba45-2b33-462e-9a28-d6817c96fd40"
+        "uid": "19388008-6ba7ece4-4f40-43c4-9b4c-be7b90377347"
       }
     ]
   }
