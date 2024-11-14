@@ -27,21 +27,21 @@
     "isPublic": false
   },
   {
-    "id": "12ea86f1-6d6a-44d5-8919-01a65211edd1",
-    "name": "My New Collection",
-    "owner": "19388008",
-    "createdAt": "2024-11-14T21:48:11.000Z",
-    "updatedAt": "2024-11-14T21:48:11.000Z",
-    "uid": "19388008-12ea86f1-6d6a-44d5-8919-01a65211edd1",
-    "isPublic": false
-  },
-  {
     "id": "ee2fdb3d-2155-4aea-afe6-72ea83ab4e3c",
     "name": "My New Collection",
     "owner": "19388008",
     "createdAt": "2024-11-14T21:47:31.000Z",
     "updatedAt": "2024-11-14T21:47:31.000Z",
     "uid": "19388008-ee2fdb3d-2155-4aea-afe6-72ea83ab4e3c",
+    "isPublic": false
+  },
+  {
+    "id": "12ea86f1-6d6a-44d5-8919-01a65211edd1",
+    "name": "My New Collection",
+    "owner": "19388008",
+    "createdAt": "2024-11-14T21:48:11.000Z",
+    "updatedAt": "2024-11-14T21:48:11.000Z",
+    "uid": "19388008-12ea86f1-6d6a-44d5-8919-01a65211edd1",
     "isPublic": false
   },
   {
