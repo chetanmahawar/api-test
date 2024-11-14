@@ -1,0 +1,83 @@
+[
+  {
+    "id": "91c7bfc3-0ea5-4119-bf92-f23a5cab13a4",
+    "name": "Addresses",
+    "owner": "19388008",
+    "createdAt": "2023-03-19T17:15:53.000Z",
+    "updatedAt": "2024-11-14T21:25:36.000Z",
+    "uid": "19388008-91c7bfc3-0ea5-4119-bf92-f23a5cab13a4",
+    "isPublic": false
+  },
+  {
+    "id": "7e8cf0be-d97a-498c-9b44-16a282b89c9e",
+    "name": "Authentication",
+    "owner": "19388008",
+    "createdAt": "2023-03-12T20:20:11.000Z",
+    "updatedAt": "2023-03-19T17:11:43.000Z",
+    "uid": "19388008-7e8cf0be-d97a-498c-9b44-16a282b89c9e",
+    "isPublic": false
+  },
+  {
+    "id": "89a81b04-2480-4cc3-a1bb-b5e31d96a997",
+    "name": "Login",
+    "owner": "19388008",
+    "createdAt": "2023-03-09T14:43:26.000Z",
+    "updatedAt": "2024-11-14T21:28:49.000Z",
+    "uid": "19388008-89a81b04-2480-4cc3-a1bb-b5e31d96a997",
+    "isPublic": false
+  },
+  {
+    "id": "ee2fdb3d-2155-4aea-afe6-72ea83ab4e3c",
+    "name": "My New Collection",
+    "owner": "19388008",
+    "createdAt": "2024-11-14T21:47:31.000Z",
+    "updatedAt": "2024-11-14T21:47:31.000Z",
+    "uid": "19388008-ee2fdb3d-2155-4aea-afe6-72ea83ab4e3c",
+    "isPublic": false
+  },
+  {
+    "id": "12ea86f1-6d6a-44d5-8919-01a65211edd1",
+    "name": "My New Collection",
+    "owner": "19388008",
+    "createdAt": "2024-11-14T21:48:11.000Z",
+    "updatedAt": "2024-11-14T21:48:11.000Z",
+    "uid": "19388008-12ea86f1-6d6a-44d5-8919-01a65211edd1",
+    "isPublic": false
+  },
+  {
+    "id": "e90d02db-d36e-44d0-b186-5e80cd208141",
+    "name": "New Collection",
+    "owner": "39752485",
+    "createdAt": "2024-11-14T21:16:22.000Z",
+    "updatedAt": "2024-11-14T21:16:50.000Z",
+    "uid": "39752485-e90d02db-d36e-44d0-b186-5e80cd208141",
+    "isPublic": false
+  },
+  {
+    "id": "11eed5d4-bfd1-4775-94d3-a253da3fe26d",
+    "name": "Products",
+    "owner": "19388008",
+    "createdAt": "2023-03-21T18:25:34.000Z",
+    "updatedAt": "2023-03-29T17:19:54.000Z",
+    "uid": "19388008-11eed5d4-bfd1-4775-94d3-a253da3fe26d",
+    "isPublic": false
+  },
+  {
+    "id": "91dc597d-53d1-422b-b34c-ca0844d753a8",
+    "name": "REST API basics: CRUD, test & variable",
+    "owner": "19388008",
+    "createdAt": "2024-11-14T21:25:47.000Z",
+    "updatedAt": "2024-11-14T21:25:48.000Z",
+    "uid": "19388008-91dc597d-53d1-422b-b34c-ca0844d753a8",
+    "isPublic": false
+  },
+  {
+    "id": "5bfb2baa-89a6-41f5-a97d-787986b4e7c6",
+    "name": "Users",
+    "owner": "19388008",
+    "createdAt": "2023-03-19T17:12:15.000Z",
+    "updatedAt": "2023-03-19T17:15:47.000Z",
+    "uid": "19388008-5bfb2baa-89a6-41f5-a97d-787986b4e7c6",
+    "isPublic": false
+  }
+]
