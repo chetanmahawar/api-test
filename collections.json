@@ -1329,5 +1329,31 @@
         "uid": "19388008-883ab31c-c0a6-4659-80bf-5425a3b9ad09"
       }
     ]
+  },
+  {
+    "info": {
+      "_postman_id": "97cc177d-bd4d-4a15-99eb-10d8f91372ec",
+      "name": "test4",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+      "updatedAt": "2024-11-15T17:51:23.000Z",
+      "createdAt": "2024-11-15T17:51:13.000Z",
+      "lastUpdatedBy": "19388008",
+      "uid": "19388008-97cc177d-bd4d-4a15-99eb-10d8f91372ec"
+    },
+    "item": [
+      {
+        "name": "test4",
+        "id": "2e2752bc-b045-400e-8132-7319019c87c3",
+        "protocolProfileBehavior": {
+          "disableBodyPruning": true
+        },
+        "request": {
+          "method": "GET",
+          "header": []
+        },
+        "response": [],
+        "uid": "19388008-2e2752bc-b045-400e-8132-7319019c87c3"
+      }
+    ]
   }
 ]
